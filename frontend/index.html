@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Login</h1>
+
+        <!-- Step 1: Select State -->
+        <label for="state">Select Your State:</label>
+        <select id="state" required>
+            <option value="">-- Select State --</option>
+            <option value="south">South India (TN, KL, KA, AP, TS)</option>
+            <option value="north">Other States</option>
+        </select>
+
+        <!-- Login Form -->
+        <form id="loginForm" style="display: none;">
+            <div id="emailField" style="display: none;">
+                <input type="email" id="email" placeholder="Enter Email">
+            </div>
+
+            <div id="phoneField" style="display: none;">
+                <input type="text" id="phoneNumber" placeholder="Enter Mobile Number">
+            </div>
+
+            <button type="button" id="sendOtpBtn">Send OTP</button>
+            <input type="text" id="otpCode" placeholder="Enter OTP" required maxlength="6">
+            <button type="button" id="verifyOtpBtn" disabled>Verify OTP</button>
+
+            <button type="submit">Login</button>
+        </form>
+
+        <!-- Firebase Recaptcha -->
+        <div id="recaptcha-container"></div>
+    </div>
+
+    <!-- JavaScript -->
+    <script type="module" src="./index.js"></script>
+</body>
+</html>

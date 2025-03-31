@@ -1,0 +1,41 @@
+body {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  transition: background .3s ease-in-out;
+  display: flex;
+}
+
+.dark-theme {
+  color: #fff;
+  background: #1e1e1e;
+}
+
+.white-theme {
+  color: #000;
+  background: #fff;
+}
+
+.dark-theme .container {
+  background: #ffffff1a;
+}
+
+.white-theme .container {
+  background: #0000001a;
+}
+
+button {
+  color: #fff;
+  cursor: pointer;
+  background-color: #007bff;
+  border: none;
+  padding: 10px;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  background-color: gray;
+}
+/*# sourceMappingURL=index.3a01df49.css.map */

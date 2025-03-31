@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background 0.3s ease-in-out;
+}
+
+.dark-theme {
+    background: #1e1e1e;
+    color: white;
+}
+
+.white-theme {
+    background: white;
+    color: black;
+}
+
+.dark-theme .container {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.white-theme .container {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
